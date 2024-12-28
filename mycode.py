@@ -6,6 +6,9 @@ data = {'Name': ['Ram','Sham','Gyan'], 'Age': [20,25,30], 'City': ["Pune", "Mumb
 
 df = pd.DataFrame(data)
 
+##
+new_row_loc = {'Name': 'GF1', 'Age': 20, 'City': 'Gurjrat'}
+df.loc[len(df.index)] = new_row_loc
 
 # Check root directory 
 data_dir= 'data'
